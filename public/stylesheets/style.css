@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Tegomin&family=Noto+Serif+JP&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oleo+Script:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+/**Main Container**/
+.body{
+  height: auto;
+}
+
+.container-float {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 5px;
+}
+
+.inner-container {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.style-one, h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'New+Tegomin';
+    font-size: 100px;
+    color: rgb(185, 88, 43);
+  }
+  
+
+  .style-two, h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Oleo';
+    font-size: xx-large;
+    color: rgb(185, 88, 43);
+    font-size: 60px;
+  }
+  
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: sandybrown;
+    overflow:hidden;
+    height: auto; 
+  }
+
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: rgb(197, 99, 13);
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown {
+    float: left;
+    font-size: 25px;
+    padding: 11px ;
+    background-color: white;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: hsl(0, 0%, 98%);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(197, 99, 13);
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(197, 99, 13);
+    color: white;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+   /************************************* Register, Login and Logout Div ******/
+   .personal-account{
+    float: right;
+    width: fit-content;
+    padding-top: 8px;
+   }
+
+   .log-btn{
+    background-color: sandybrown;
+    text-align: center;
+    cursor: pointer;
+   }
+
+   /*************************************** Search Bar ****************/
+   /* .w-25 {
+    width: 100px;
+    margin-top: 8px;
+    float: right;
+} */
+
+   /****************************************** Home Page Image carousel ****************/
+    lower-container.homepage-image-display,img {
+    width: 100%;
+    height: 600px;
+  }
+
+  .content-box {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .first-description {
+    float: left;
+    width: 50%;
+    height: auto;
+  }
+
+  .second-description {
+    float: left;
+    width: 50%;
+    height: auto;
+  }
+
+  .content1-img {
+    float: left;
+    width: auto;
+    height: auto;
+  }
+
+
+ 
+  
+
+/******************************************************************************** Footer Bar ****************/
+.footer-page {
+    float: left;
+    width: 100%;
+    background-color: sandybrown;
+    text-align: center;
+    bottom: 0;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  .footer-content{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+
+ 
+/*****************************************************TEAM PAGE****************************/
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 8px;
+}
+
+.checkoutbtn{
+  border-radius: 16px;
+  background-color:sandybrown;
+  text-align: center;
+  cursor: pointer;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: sandybrown;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: rgb(197, 99, 13);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+.cardrow1 {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.column1{
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+.column2{
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+.cardrow2 {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.column3{
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+.column4{
+  float: left;
+  width: 50%;
+  height: auto;
+}
+/************************************************************************************HOME PAGE DESCRIPTION************/
+
+.first-description{
+  width: 50%;
+  height: auto;
+  float: left;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-top-right-radius: 50px;
+  font-family: 'Montserrat';
+  font-size: x-large;
+}
+
+.second-description{
+  width: 50%;
+  height: auto;
+  float: left;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  font-family: 'Montserrat';
+  font-size: x-large;
+}
+
+.third-description{
+  width: auto;
+  height: auto;
+  text-align: center;  
+  margin-bottom: 50px;
+}
+
+
+/******************************************************************************* REGISTRATION PAGE *****************/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.regContainer {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+
+}
+
+@media screen and (min-width: 650px) {
+  .regContainer {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+  
+}
+
+
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #b1e8d4;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  height: auto;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+/***************************************************************  SIGN UP // LOGIN  ***********/
+
+  /* style the container */
+ 
+  
+  /* style inputs and link buttons */
+  /* style inputs and link buttons */
+  input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 5px 0;
+    opacity: 1.85;
+    display: inline-block;
+    font-size: 25px;
+    line-height: 40px;
+    text-decoration: none; /* remove underline from anchors */
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+    color: white;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+
+  /* Two-column layout */
+  .col-container {
+    float: left;
+    width: 50%;
+    margin: auto;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content:initial;
+    display: table;
+    clear: both;
+  }
+  
+  /* vertical line */
+ 
+  /* text inside the vertical line */
+
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+    display: none;
+  }
+  
+  /* bottom container */
+  .bottom-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+
+  .col-reg {
+    width: 50%;
+    height: auto;
+    background-color: rgb(245, 197, 156);
+    float: left;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  }
+
+  .col-forgot {
+    width: 50%;
+    height: auto;
+    background-color: rgb(245, 197, 156);
+    float: left;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 650px) {
+    .col {
+      width: 100%;
+      margin-top: 0;
+    }
+    /* hide the vertical line */
+    .vl {
+      display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+/****************************************************************************** PASSWORD VALIDATION ******/
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: hsla(150, 20%, 2%, 0.717);
+  color: white;
+}
+
+/* Style the container for inputs */
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;               
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+
+
+
+/******************************************************************************/
+
+
+/********************************************************************CONTACT PAGE*************/
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: rgb(249, 238, 224);
+
+}
+
+input[type=submit] {
+  background-color: sandybrown;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f50d0dfc;
+}
+
+/* Style the container/contact section */
+
+.contact-info, p {
+  text-align: center;
+}
+/* Create two columns that float next to eachother */
+.column-image {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.contact-row {
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.column-form {
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+/************************************************************PAYMENT/CHECKOUT PAGE*******/
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 50px 10px 10px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-top: 50px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccccbc;
+    border-radius: 50px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .form-check {
+    height: auto;
+    text-align: left;
+  }
+
+  :checked {
+    padding: 0px;
+  }
+
+  .checkoutbtn:hover {
+    background-color: rgb(197, 99, 13);
+  }
+  
+  .cart-container{
+    background-color: gainsboro;
+    padding: 20px 50px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.2);
+  }
+
+  .product-quantity {
+    margin-left: auto;
+  }
+
+  a.product-price {
+    color: red;
+  }
+  
+  hr {
+    border: 4px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+
+ 
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  } 
+
+
+
+ /*****************************************************************COMPANY PAGE*****************/
+ .profile-description {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Oleo';
+  font-size: 20px;
+ }
+
+ .company-vision-info {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  font-family: 'Oleo';
+  font-size: 25px;
+ }
+
+ .customer-focus {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin-top: 10px;
+  font-family: 'Oleo';
+  font-size: 25px;
+ }
+ 
+
+/****************************************************************************AUTOMOBILE SALES**************/
+.automobile-sales {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .automobile1 {
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .automobile2 {
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .automobile1 {
+  
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .automobile2 {
+  
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+ 
+}
+
+.autobus{
+  width: 100%;
+  height: auto;
+}
+   
+
+/* CSS to style the profile image */
+img.welcome-link {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+/******Inside Personalized page**/
+
+
+.center-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+
