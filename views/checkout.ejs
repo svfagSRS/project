@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> AJ Exclusive Autombile Sales </title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=" car sales, luxury car, sport cars, more keywords ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="AJ Exclusive Automobile Services located in Dublin City, Ireland">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "stylesheets/style.css" type = "text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-float">
+        <header class="container-fluid sticky-top px-0">
+            <div class="topnav" id="myTopnav">
+                <a href="./"><i class="fa fa-fw fa-home"></i> Home</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">About <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="./company">Company</a>
+                        <a href="./contact">Contact</a>
+                        <a href="./team">Team</a>
+                    </div>
+                </div>
+
+              
+
+                <div class="dropdown">
+                    <button class="dropbtn">Autombile Catalogs <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="./cars">Cars Catalog</a>
+                        <a href="./suvs">SUVs Catalog</a>
+                        <a href="./buses">Buses Catalog</a>
+                      
+                    </div>
+                </div>
+
+                <div class="personal-account">
+                    <div class="d-flex" role="search">
+                        <a href="/welcome"><img src="./images/profile2.jpg" alt="Welcome Page"class="welcome-link" /></a><br>
+
+                        <input id="search" class="form-control me-2" type="search" placeholder="search" aria-label="Search">
+                        <button onclick="search()" class=" w-25 btn btn-primary btn-sm">Submit</button>
+                    </div>
+                    <a href="./register"><i class="fa fa-fw fa-user"></i> Register</a>
+                    <a href="./login"><i class="fa fa-fw fa-user"></i> Login</a>
+                    <a class="active" href="./cart"><i class="fa fa-fw fa-user"></i> Checkout</a>
+                    <a href="./logout"><i class="fa fa-fw fa-user"></i> Logout</a>
+                </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </header>
+
+        <hr>
+        <div class="inner-container">
+            <div class="checkout">
+                <p><h1>Payment Form</h1></p>
+                <p><em><strong>Kindly enter your billing address, bank card details and confirm your items for payment before checking out</strong></em>.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-75">
+                <div class="container-md">
+                    <form  name="myForm" >
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fullname" name="firstname" placeholder="Joel Omobude">
+                                <label for="email"><i class="fa fa-envelope" required="true"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="joel@example.com">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="address" name="address" placeholder="54 Adamstown, Dorsborough Road, Swords">
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" id="city" name="city" placeholder="Co. Dublin">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">County</label>
+                                        <input type="text" id="county" name="county" placeholder="Dublin">
+                                    </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="K78XE45">
+                                </div>       
+                                    </div>
+                                </div>       
+
+                                <div class="col-50">
+                            
+                        
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cardName" name="cardname" placeholder="John More Doe">
+                                <label for="ccnum">Credit Card Number</label>
+                                <input type="text" id="cardNo" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                <label for="expmonth">Exp. Month</label>
+                                <input type="text" id="month" name="expmonth" placeholder="September">
+                                <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp. Year</label>
+                                    <input type="text" id="exYear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="something" checked>
+                            <p><label class="form-check-label"> Shipping address same as billing</label></p>
+                            <p>Add more items before payment. <a href="./gallery">Goto Catalog</a></p>
+                            <p><input onclick="validateCheckoutForm(event)" value="Continue to checkout" class="checkoutbtn"></p>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                
+            <div class="col-25">
+                <div class="cart-container">
+                    <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b><h4</b></span></h4>
+                    <% cart.forEach(cart => { %>
+                    <p><a class="product-price" href="#"><%=cart.brand%></a> <span class="price"><%=cart.price%> Euro</span></p>
+                
+                    <% }); %>
+                    <hr>
+                    <p>Total <span class="price" style="color:black"><b><%=total%></b></span></p>
+                </div>
+            </div>                   
+        </div>       
+
+
+        <hr>
+        <div class="footer-page">
+            <div class="footer-content">
+                <footer>
+                    <p></p>&copy; 2024<br>
+                        Contact Hours <br>
+                        Weekdays: 8.00a.m – 10.00p.m <br>
+                        Weekends: 8.00a.m – 10.00p.m <br>
+    
+                        Help Desk Number: <br>
+                        01 837 889 090 
+                        or drop us a message <a href="./contact">here</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>  
+    <script type="text/javascript" src="javascripts/script.js"></script>               
+</body>
+</html>

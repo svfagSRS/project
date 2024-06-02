@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> AJ Exclusive Autombile Sales </title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=" car sales, luxury car, sport cars, more keywords ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="AJ Exclusive Automobile Services located in Dublin City, Ireland">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "stylesheets/style.css" type = "text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class = "container-float">
+        <header class="container-fluid sticky-top px-0">
+            <div class="topnav" id="myTopnav">
+                <a href="./"><i class="fa fa-fw fa-home"></i> Home</a>
+
+                <div class="dropdown">
+                    <button class="active" class="dropbtn">About <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="./company">Company</a>
+                        <a class="active" href="#">Contact</a>
+                        <a href="./team">Team</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Autombile Catalogs <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a class="active" href="./cars">Cars Catalog</a>
+                        <a href="./suvs">SUVs Catalog</a>
+                        <a href="./buses">Buses Catalog</a>
+                      
+                    </div>
+                </div>
+
+                <div class="personal-account">
+                    <div class="d-flex" role="search">
+                        <a href="/welcome"><img src="./images/profile2.jpg" alt="Welcome Page"class="welcome-link" /></a><br>
+
+                        <input id="search" class="form-control me-2" type="search" placeholder="search" aria-label="Search">
+                        <button onclick="search()" class=" w-25 btn btn-primary btn-sm">Submit</button>
+                    </div>
+                    <a href="./register"><i class="fa fa-fw fa-user"></i> Register</a>
+                    <a href="./login"><i class="fa fa-fw fa-user"></i> Login</a>
+                    <a href="./cart"><i class="fa fa-fw fa-user"></i> Checkout</a>
+                    <a href="./logout"><i class="fa fa-fw fa-user"></i> Logout</a>
+                </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </header>
+
+
+        <hr>
+        <div class="inner-container">
+            <section class="contact-page">
+                <h1>Contact Us</h1>
+                <div class="contact-info">
+                    <p><em><strong>We would love to hear from you.</p>
+                    <p>Swing by for a cup of coffee, give us a call, or drop us a message:<strong></em></p>
+                </div>
+
+
+                <div class="d-md-flex">
+                    <div class="column-image">
+                        <img src="images/carousel-2.jpg">
+                    </div>
+                    
+                    <div class="">
+                        <div name="contactForm" >
+
+                            <input type="text" id="fname" name="firstname" placeholder="Enter first name...">
+                            <input type="text" id="lname" name="lastname" placeholder="Enter last name...">
+                            <input type="text" id="email" name="email" placeholder="joel@example.com...">
+        
+                            
+                            <label for="country"><h5>Select your country</h5></label>
+                            <select id="country" name="country">
+                                <option value="ireland">Ireland</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                                <option value="nigeria">Nigeria</option>
+                                <option value="brazil">Brazil</option>
+                                <option value="ukriane">Ukriane</option>
+                                <option value="russia">Russia</option>
+                                <option value="australia">Australia</option>
+        
+        
+                            </select>
+                            <label for="subject"><h5>Let us know what you think</h5></label>
+                            <textarea id="subject" name="subject" placeholder="Write something..." style="height:170px"></textarea>
+                            <input onclick = validateForm() type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <hr>
+        <div class="footer-page">
+            <div class="footer-content">
+                <footer>
+                    <p></p>&copy; 2024<br>
+                        Contact Hours <br>
+                        Weekdays: 8.00a.m – 10.00p.m <br>
+                        Weekends: 8.00a.m – 10.00p.m <br>
+    
+                        Help Desk Number: <br>
+                        01 837 889 090 
+                        or drop us a message <a href="./contact">here</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div> 
+    <script type="text/javascript" src="javascripts/script.js"></script>                  
+</body>
+</html>
+
